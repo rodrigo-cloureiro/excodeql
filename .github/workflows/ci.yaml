@@ -47,6 +47,6 @@ jobs:
         run: mvn compile -DskipTests
 
       - name: Executar análise de CodeQL
-        uses: github/codeql-action/analyse@v3
+        uses: github/codeql-action/analyze@v3
         with:
           category: "/language:${{ matrix.language }}"
